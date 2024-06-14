@@ -1,0 +1,176 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  position: relative;
+}
+
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(207, 202, 202);
+  padding: 15px;
+  color: gold;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(photo_2023-11-09_19-26-53_2_400x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  
+  
+
+}
+.container .home{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  
+}
+
+.container .home a{
+  color: gold;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 600px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  .container .home{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* end of header*/
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 20px;
+ 
+  
+}
+main div{
+  width: 100px;
+  height: 2px;
+  background-color: black;
+
+}
+
+main button{
+  background-color: rgb(248, 148, 35);
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+ 
+}
+/* end of main*/
+.close-choice {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ gap: 30px;
+ margin: 30px 10px;
+ text-align: center;
+}
+
+.close-choice img{
+  width: 150px;
+}
+@media screen and (max-width: 700px) {
+  .close-choice{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgray;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 50px;
+
+}
+footer h2, h3{
+  color: #D35400 ;
+  font-size: 1rem;
+}
+.police{
+  display: flex;
+  gap: 10px;
+
+}
+.follow{
+  width: 40%;
+}
+.follow i{
+  font-size: 30px;
+  padding-right: 40px;
+}
+.terms{
+  width: 60%;
+  align-items: center;
+}
+.terms button{
+  background-color: #D35400;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 25px;
+  margin-left: 100px;
+  color: aliceblue;
+  
+}
+
+.input{
+  display: flex;
+  gap: 10px;
+  
+}
+.input input{
+  width: 40%;
+  height: 30px;
+  border: none;
+}
+
+@media screen and (max-width: 700px){
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  
+.follow{
+  width: 70%;
+
+}
+
+.terms{
+  width: 70%;
+  
+}
+
+.input input{
+  display: flex;
+  gap: 10px;
+  width: 40%;
+}
+
+
+
+
+
+
+}
